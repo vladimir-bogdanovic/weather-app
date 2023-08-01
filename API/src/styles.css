@@ -1,0 +1,29 @@
+
+:root {
+    --blue-1: #033F63;
+    --blue-2: #394fb1;
+    --green-2: #7C9885;
+    --yelow: #FFD449;
+    --black: #211C1F;
+    --grey-1: #4a4949;
+    --grey-2: #acacac;
+    --white: #F7F7FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: #033F63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
