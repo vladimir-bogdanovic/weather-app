@@ -119,9 +119,3 @@
   color: var(--grey-1);
   text-align: center;
 }
-
-.warning-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
