@@ -11,7 +11,8 @@
 
 <div class="weather-card" *ngIf="weatherData">
   <div class="upper-half">
-    <img src="assets/{{ tempIsHot ? 'hot' : 'cold' }}.jpg" alt="weather-img" />
+    <!-- <img src="assets/{{ tempIsHot ? 'hot' : 'cold' }}.jpg" alt="weather-img" /> -->
+    <img src="../assets/{{ tempIsHot ? 'hot' : 'cold' }}.jpg" alt="" />
     <div class="weather-data">
       <div class="info">
         <div class="city">{{ weatherData.location.name }}</div>

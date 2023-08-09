@@ -15,19 +15,19 @@ export class AppComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
 
   ngOnInit(): void {
-    this.weatherService
-      .getWeatherData(this.cityName)
-      .subscribe((response: WeatherData) => {
-        this.weatherData = response;
-        this.tempIsHot = this.weatherData.current.temp_c < 15 ? false : true;
-      });
+    this.getWeatherData();
   }
 
   onSubmit() {
+    this.getWeatherData();
+  }
+
+  getWeatherData() {
     this.weatherService
       .getWeatherData(this.cityName)
       .subscribe((response: WeatherData) => {
         this.weatherData = response;
+        this.tempIsHot = this.weatherData.current.temp_c <= 15 ? false : true;
       });
   }
 }
